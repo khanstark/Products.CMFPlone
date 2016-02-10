@@ -10,6 +10,8 @@ Changelog
 
 New:
 
+- Supported ``remove`` keyword for configlets in controlpanel.xml.  [maurits]
+
 - If a bundle does not provide any resources, do not attempt to compile it
   [vangheem]
 
