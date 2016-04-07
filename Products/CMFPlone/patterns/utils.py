@@ -1,8 +1,10 @@
-import json
-from zope.component.hooks import getSite
+# -*- coding: utf-8 -*-
 from plone.app.layout.navigation.root import getNavigationRootObject
 from Products.CMFCore.interfaces import ISiteRoot
 from zope.component import providedBy
+from zope.component.hooks import getSite
+
+import json
 
 
 def format_pattern_settings(option, config):

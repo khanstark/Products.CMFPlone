@@ -10,7 +10,9 @@ Changelog
 
 Incompatibilities:
 
-- *add item here*
+- Moved code around and deprecated old locations in ``Products/CMFPlone/patterns/__init__``. 
+  This goes together with same pattern settings changes in ``plone.app.layout.globals.pattern_settings``.
+  [jensens]
 
 New:
 
@@ -22,6 +24,10 @@ New:
   [jensens]
 
 Fixes:
+
+- Closes #1513 'Wrong portal_url used for TinyMCE in multilingual site',
+  also refactors the patterns settings and cleans it up.
+  [jensens]
 
 - Only encode JS body if unicode in gruntfile generation script to avoid
   unicode error.
