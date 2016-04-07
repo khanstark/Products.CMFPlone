@@ -135,7 +135,7 @@ class TinyMCESettingsGenerator(object):
                 " cell row column deletetable"
 
         if settings.libraries_spellchecker_choice == 'AtD':
-            mtool = getToolByName(self.portal, 'portal_membership')
+            mtool = getToolByName(self.context, 'portal_membership')
             member = mtool.getAuthenticatedMember()
             member_id = member.getId()
             if member_id:
